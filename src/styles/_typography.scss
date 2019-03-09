@@ -1,0 +1,59 @@
+/* typography */
+$font-primary: 'Lato',-apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+
+
+/* set base values */
+$text-base-size: 16px;
+$text-scale-ratio: 1.618;
+
+/* type scale */
+$text-xs: $text-base-size / $text-scale-ratio;
+$text-sm: $text-base-size;
+$text-md: $text-base-size * $text-scale-ratio;
+$text-lg: $text-base-size * $text-scale-ratio * $text-scale-ratio;
+$text-xl: $text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio;
+$text-xxl: $text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio;
+
+/* typography classes */
+body, .text-sm {
+    font-size: $text-sm;
+    font-family: $font-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin-bottom: $space-sm-1;
+}
+
+h1, .text-xxl {
+font-size: $text-xxl;
+line-height: $space-md-4;
+}
+
+h2, .text-xl {
+font-size: $text-xl;
+line-height: $space-md-3;
+}
+
+h3, .text-lg {
+font-size: $text-lg;
+line-height: $space-md-2;
+}
+
+h4, .text-md {
+font-size: $text-md;
+line-height: $space-md-1;
+}
+
+h5 {
+font-size: $text-sm;
+line-height: $space-sm-4;
+}
+
+h6, .text-xs {
+font-size: $text-xs;
+line-height: $space-sm-3;
+}
+
+p {
+    line-height: $space-md-1;
+}
